@@ -46,7 +46,11 @@ const displayData = (data, count) => {
       behavior: 'smooth', // for a smooth scrolling animation
     });
   });
-  getLikeData(x).then((x) => { likeCount.innerHTML = `Likes: ${x}`; });
+
+  setInterval(() => {
+    getLikeData(x).then((x) => { likeCount.innerHTML = `Likes: ${x}`; });
+  }, 1000);
+
   box.classList.add('box');
   box.classList.add('box');
   series.classList.add('series');
