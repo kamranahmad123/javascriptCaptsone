@@ -175,7 +175,17 @@ body {
 
 /* like part */
 .like {
-  color: red;
+  animation: likecolor 2s;
+}
+
+@keyframes likecolor {
+  0% {
+    color: red;
+  }
+
+  100% {
+    color: transparent;
+  }
 }
 
 .pop-container {
